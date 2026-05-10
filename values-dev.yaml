@@ -1,6 +1,6 @@
 deployment:
   image: 838180513114.dkr.ecr.us-east-1.amazonaws.com/roboshop/shipping
-  imageVersion: IMAGE_VERSION
+  imageVersion: "IMAGE_VERSION"
   targetPort: 8080
   # replicas: 2
 hpa:
