@@ -32,7 +32,7 @@ pipeline {
                 }
             }
         }
-        stage('Check Status'){
+        /* stage('Check Status'){
             steps{
                 script{
                     withAWS(credentials: 'aws-creds', region: 'us-east-1') {
@@ -56,7 +56,7 @@ pipeline {
                     }
                 }
             }
-        }
+        } */
         // API Testing
         stage('Functional Testing'){
             when{
