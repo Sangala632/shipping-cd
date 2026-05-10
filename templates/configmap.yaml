@@ -1,0 +1,19 @@
+# ConfigMap
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: shipping
+  namespace: roboshop
+  
+  labels:
+    component: shipping
+    project: roboshop
+    tier: application
+
+data:
+  MONGO: "true"
+  REDIS_URL: {{ .Values.configMap.REDIS_URL}}
+  MONGO_URL: {{ .Values.configMap.MONGO_URL}}
+  # REDIS_URL: "redis://redis:6379"
+  # MONGO_URL: "mongodb://mongodb:27017/users"
+
